@@ -1,0 +1,55 @@
+AP-102 NEURO-PROSTHETIC (MK-IV) DUAL-LICENSE FRAMEWORK
+Copyright (c) 2026 Sourav. All Rights Reserved.
+
+This project is governed by a dual-license architecture designed to preserve the
+open availability of physical bionic fabrication while offering permissive patent-safe
+integration for embedded control code.
+
+================================================================================
+PART I: HARDWARE, BLUEPRINTS, SCHEMATICS, AND MECHANICAL MODELS
+================================================================================
+All schematic diagrams, manufacturing blueprints (AP-102 series), bills of materials,
+socket anchoring designs, and 3D CAD/STEP mechanical specifications located in the 
+repository (including `/docs/`) are licensed under:
+
+    CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S-2.0)
+
+1. RECIPROCAL OBLIGATIONS: If you modify the Hardware or manufacture physical 
+   devices based upon it and distribute them, you must make available to recipients 
+   the complete, machine-readable Complete Source files (including editable CAD, 
+   schematic source files, manufacturing tolerances, and assembly documentation) 
+   under the terms of CERN-OHL-S v2.
+2. NOTICE & ATTRIBUTION: You must maintain all original drawing blocks, copyright 
+   notices, drawing numbers, and author credits on all schematic prints, physical 
+   enclosures, and printed circuit board silkscreens.
+
+Full CERN-OHL-S v2 legal text: https://cern-ohl.web.cern.ch/v2/cern_ohl_s_v2.txt
+
+================================================================================
+PART II: SOFTWARE, EMBEDDED FIRMWARE, AND DSP PIPELINES
+================================================================================
+All source code, Python modules, filtering algorithms, time-domain feature 
+extractors, and firmware drivers located in `/firmware/` and related software directories 
+are licensed under:
+
+    Apache License, Version 2.0 (the "License")
+
+You may obtain a copy of the License at:
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed 
+under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
+CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+specific language governing permissions and limitations under the License.
+
+================================================================================
+PART III: INVESTIGATIONAL USE ONLY & CLINICAL NON-LIABILITY
+================================================================================
+THE ARCHITECTURE IS EXPERIMENTAL AND NOT INTENDED FOR CLINICAL INTERVENTION, 
+SURGICAL OSSEOINTEGRATION, OR DIRECT HUMAN APPLICATION WITHOUT PRIOR REGULATORY 
+CLEARANCE. THE DESIGN IS PROVIDED "AS-IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS 
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS 
+FOR A PARTICULAR PURPOSE, BIOCOMPATIBILITY, OR NON-INFRINGEMENT. IN NO EVENT SHALL 
+THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, LOSS OF LIMB FUNCTION, 
+PHYSICAL INJURY, OR OTHER LIABILITY ARISING FROM THE FABRICATION, USE, OR 
+DISTRIBUTION OF THIS HARDWARE OR SOFTWARE.

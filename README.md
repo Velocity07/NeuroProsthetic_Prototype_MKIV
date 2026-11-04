@@ -187,3 +187,31 @@ If you reference this specification, blueprints, or DSP firmware in your researc
 
 **Standard Format:**
 > Sourav. (2026). *AP-102 Neuro-Prosthetic-Prototype (Mk-IV): Open-Source Biomechatronic Architecture & Neural Interface Specification*. GitHub. [https://github.com/Velocity07/NeuroProsthetic_Prototype_MKIV](https://github.com/Velocity07/NeuroProsthetic_Prototype_MKIV)ś
+
+## 6. Intellectual Property, Governance & Licensing
+
+The **AP-102 Neuro-Prosthetic-Prototype (Mk-IV)** is distributed under a dual-domain open-source licensing model. This structure addresses the distinct legal requirements of physical biomechatronic hardware versus embedded real-time software, ensuring physical designs remain open while enabling broad algorithmic integration.
+
+| Domain | Scope & Directory | Governing License | Policy & Legal Provisions |
+| :--- | :--- | :--- | :--- |
+| **Physical Hardware & CAD** | `/docs/assets/`, Blueprints (`AP-102-*`), BOM, Kinematics, Schematics | **CERN-OHL-S v2**<br>*(Strongly Reciprocal)* | **Strict Hardware Reciprocity.** Physical fabrication and commercial distribution are permitted. Any derivative mechanical design, socket revision, or physical product distributed commercially must publish complete, machine-readable manufacturing files under CERN-OHL-S v2. |
+| **Firmware & Signal Pipelines** | `/firmware/`, DSP Engine, ML Feature Extractors, Driver Layers | **Apache License 2.0** | **Permissive with Patent Protection.** Provides explicit contributor patent grants. Permits static/dynamic linking into proprietary robotics middlewares (e.g., ROS2, MuJoCo, custom motor drives) without forcing the host controller software to be open-sourced. |
+| **Documentation & Assets** | Specifications, Whitepaper, Mathematical Proofs, Schematics Art | **CC BY-SA 4.0** | Requires explicit author attribution (`AP-102 Mk-IV Architecture by Sourav`) and share-alike distribution for downstream documentation. |
+
+---
+
+### Hardware Distribution & "Anti-Lockout" Rights
+Under **CERN-OHL-S v2**, third parties, research institutions, and bionics startups may freely produce, adapt, and sell the AP-102 Mk-IV hardware. However, recipients of physical units are legally entitled to:
+1. Access complete production sources (Gerbers, STEP/CAD models, wiring topologies, and assembly manuals).
+2. Inspect, repair, replace, and modify any sub-assembly (actuators, socket anchors, or sensor hubs) without voiding digital access keys or software parity.
+3. Proprietary closed-source "black-box" hardware paywalls built directly upon the AP-102 mechanical drawings are strictly prohibited.
+
+---
+
+### Regulatory, Medical & Clinical Research Disclaimer
+> **IMPORTANT NOTICE — INVESTIGATIONAL RESEARCH ARTIFACT ONLY**  
+> The AP-102 Mk-IV specification, blueprints, and code are engineered solely for academic inquiry, engineering simulation, and biomechatronic prototyping. 
+> 
+> * **Not a Medical Device:** This system is **not** certified under FDA 21 CFR Part 820, EU Medical Device Regulation (MDR 2017/745), or ISO 13485 standards.
+> * **No In-Vivo Validation:** Designs referencing osseointegration, subdermal electrodes, and nerve cuffs have not undergone chronic biocompatibility screening (ISO 10993) or institutional human subject review (IRB). 
+> * **Disclaimer of Strict Liability:** Under no circumstances shall the author, copyright holders, or contributors be held liable for any direct, indirect, surgical, biological, or physiological damages, including tissue necrosis, thermal injury, hardware shear, or neurological damage resulting from physical manufacturing, implantation, or operational use of this specification.
